@@ -1,16 +1,14 @@
 import { Component, computed, input, output } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { LucideDynamicIcon, LucideIconInput, LucideLoader } from '@lucide/angular';
 
-type Variants = 'primary' | 'secondary' | 'text' | 'link' | 'destructive' | 'ghost';
+type Variants = 'primary' | 'secondary' | 'text' | 'destructive' | 'ghost';
 type Sizes = 'default' | 'sm' | 'lg' | 'icon';
 
-const variants: Record<Variants, string> = {
+export const variants: Record<Variants, string> = {
   primary: 'bg-primary text-primary-foreground',
   secondary: 'bg-secondary text-secondary-foreground',
   destructive: 'bg-destructive text-destructive-foreground',
   ghost: 'bg-transparent hover:bg-muted text-muted-foreground',
-  link: 'text-primary hover:underline underline-offset-2',
   text: 'text-foreground',
 };
 
@@ -28,37 +26,24 @@ const base: string = `
 
 @Component({
   selector: 'app-button',
-  imports: [RouterLink, LucideDynamicIcon, LucideLoader],
+  imports: [LucideDynamicIcon, LucideLoader],
   template: `
-    @if (link()) {
-      <a
-        [routerLink]="link()"
-        [replaceUrl]="replaceUrl()"
-        [class]="classes()"
-      >
-        @if (startIcon()) {
-          <svg [lucideIcon]="startIcon()"></svg>
-        }
-        <ng-content></ng-content>
-      </a>
-    } @else {
-      <button
-        [class]="classes()"
-        [type]="type()"
-        [disabled]="isDisabled()"
-        (click)="handleClick($event)"
-      >
-        @if (loading()) {
-          <svg
-            lucideLoader
-            class="animate-spin"
-          ></svg>
-        } @else if (startIcon()) {
-          <svg [lucideIcon]="startIcon()"></svg>
-        }
-        <ng-content></ng-content>
-      </button>
-    }
+    <button
+      [class]="classes()"
+      [type]="type()"
+      [disabled]="isDisabled()"
+      (click)="handleClick($event)"
+    >
+      @if (loading()) {
+        <svg
+          lucideLoader
+          class="animate-spin"
+        ></svg>
+      } @else if (startIcon()) {
+        <svg [lucideIcon]="startIcon()"></svg>
+      }
+      <ng-content></ng-content>
+    </button>
   `,
 })
 export class Button {
@@ -71,9 +56,6 @@ export class Button {
 
   startIcon = input<LucideIconInput | null>(null);
 
-  link = input<string | any[] | null>(null);
-  replaceUrl = input<boolean>(false);
-
   onClick = output<MouseEvent>();
 
   isDisabled = computed((): boolean => this.disabled() || this.loading());
@@ -82,10 +64,7 @@ export class Button {
   );
 
   handleClick(evt: MouseEvent): void {
-    if (this.isDisabled()) {
-      evt.preventDefault();
-      return;
-    }
+    if (this.isDisabled()) return;
 
     this.onClick.emit(evt);
   }

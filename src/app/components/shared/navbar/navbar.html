@@ -1,0 +1,13 @@
+<nav class="h-20 bg-secondary w-full mb-20 fixed top-0 left-0">
+  <div class="container h-full w-full mx-auto flex items-center justify-between">
+    <div routerLink="/" class="size-12.5 relative cursor-pointer">
+      <img ngSrc="/logo.svg" alt="logo" fill class="w-full h-full object-contain aspect-square">
+    </div>
+
+    <div class="flex items-center gap-3">
+      <app-button link="/" [variant]="'link'">Home</app-button>
+      <app-button link="/cars" [variant]="'link'">Cars</app-button>
+      <app-button link="/about" [variant]="'link'">About</app-button>
+    </div>
+  </div>
+</nav>
