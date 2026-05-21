@@ -1,0 +1,58 @@
+<section class="w-full h-[calc(100vh-72px)] bg-[url('/hero.jpg')] bg-no-repeat bg-cover">
+  <div class="container mx-auto h-full flex items-center overflow-x-clip">
+    <div class="grid grid-cols-2 gap-10 h-full w-full">
+      <div class="flex flex-col justify-center gap-1">
+        <h1
+          #leftContent
+          class="lg:text-5xl font-bold text-2xl text-primary"
+        >
+          {{ cars[0].mark }}
+        </h1>
+        <p
+          #leftContent
+          class="font-semibold lg:text-2xl text-xl text-secondary-foreground"
+        >
+          {{ cars[0].model }}
+        </p>
+        <p
+          #leftContent
+          class="text-secondary-foreground font-medium"
+        >
+          {{ cars[0].year }}
+        </p>
+        <p
+          #leftContent
+          class="text-muted-foreground text-[16px]"
+        >
+          {{ cars[0].engine }}
+        </p>
+        <p
+          #leftContent
+          class="text-[22px] font-bold text-primary"
+        >
+          {{ cars[0].price | currency: 'USD' }}
+        </p>
+
+        <app-button
+          [startIcon]="lucideEye"
+          classNames="mt-5"
+          (onClick)="router.navigate(['/cars/detail', cars[0].id])"
+        >
+          Show details
+        </app-button>
+      </div>
+
+      <div
+        #rightContent
+        class="relative w-full"
+      >
+        <img
+          [ngSrc]="cars[0].imageUrl"
+          [alt]="cars[0].model"
+          fill
+          class="object-contain select-none pointer-events-none"
+        />
+      </div>
+    </div>
+  </div>
+</section>
