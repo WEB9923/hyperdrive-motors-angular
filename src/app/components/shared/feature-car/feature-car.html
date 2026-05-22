@@ -1,1 +1,56 @@
-<p>feature-car works!</p>
+<section
+  #scrollWrapper
+  class="h-screen w-full relative overflow-clip flex items-center justify-center"
+>
+  <div
+    #scrollingCar
+    class="w-full h-full select-none pointer-events-none z-10"
+  >
+    <img
+      [ngSrc]="challenger?.imageUrl!"
+      [alt]="challenger?.model"
+      fill
+      priority
+      class="object-cover w-full h-full"
+    />
+  </div>
+
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-20 gap-2">
+    <h2
+      #content
+      class="lg:text-5xl font-bold text-2xl text-primary"
+    >
+      {{ challenger?.mark }}
+    </h2>
+    <p
+      #content
+      class="font-semibold lg:text-2xl text-xl text-secondary"
+    >
+      {{ challenger?.model }}
+    </p>
+    <p
+      #content
+      class="text-secondary font-medium"
+    >
+      {{ challenger?.year }}
+    </p>
+    <p
+      #content
+      class="text-secondary text-[16px]"
+    >
+      {{ challenger?.engine }}
+    </p>
+    <p
+      #content
+      class="text-secondary text-[15px]"
+    >
+      Horsepower - {{ challenger?.horsepower }}
+    </p>
+    <p
+      #content
+      class="text-secondary text-[15px]"
+    >
+      Top speed - {{ challenger?.topSpeed }}
+    </p>
+  </div>
+</section>

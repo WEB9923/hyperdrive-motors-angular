@@ -163,4 +163,18 @@ export const cars: CarsModel[] = [
     price: 43000,
     topSpeed: 255,
   },
+  {
+    id: 14,
+    imageUrl: 'https://cdn.wallpapersafari.com/75/49/vmpgUq.jpg',
+    mark: 'Dodge',
+    model: 'Challenger SRT Hellcat',
+    year: '2023',
+    engine: '6.2L Supercharged V8',
+    horsepower: 717,
+    transmission: 'Automatic',
+    drivetrain: 'RWD',
+    fuelType: 'Gasoline',
+    price: 72000,
+    topSpeed: 320,
+  },
 ];
