@@ -1,5 +1,5 @@
 <section class="w-full h-[calc(100vh-72px)] bg-[url('/hero.jpg')] bg-no-repeat bg-cover">
-  <div class="container mx-auto h-full flex items-center overflow-x-clip">
+  <div class="container px-5 mx-auto h-full flex items-center overflow-x-clip">
     <div class="grid grid-cols-2 gap-10 h-full w-full">
       <div class="flex flex-col justify-center gap-1">
         <h1
@@ -36,7 +36,7 @@
         <app-button
           [startIcon]="lucideEye"
           classNames="mt-5"
-          (onClick)="router.navigate(['/cars/detail', cars[0].id])"
+          (onClick)="router.navigate(['/cars/details', cars[0].id])"
         >
           Show details
         </app-button>

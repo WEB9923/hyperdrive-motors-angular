@@ -1,1 +1,94 @@
-<p>detail works!</p>
+<div class="py-10">
+  <div
+    class="container overflow-x-clip px-5 mx-auto grid lg:grid-cols-[1fr_350px] grid-cols-1 lg:gap-10 gap-6"
+  >
+    <div
+      #leftContent
+      class="relative h-100 w-full"
+    >
+      <img
+        [ngSrc]="car()?.imageUrl!"
+        alt="image"
+        fill
+        priority
+        class="object-contain aspect-square"
+      />
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="">
+        <h2
+          #rightContent
+          class="text-primary font-bold lg:text-3xl text-2xl"
+        >
+          {{ car()?.mark }}
+        </h2>
+        <p
+          #rightContent
+          class="text-secondary-foreground font-semibold"
+        >
+          {{ car()?.model }}
+        </p>
+      </div>
+
+      <div class="space-y-1">
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Year:
+          <span class="font-semibold">{{ car()?.year }}</span>
+        </p>
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Fuel type:
+          <span class="font-semibold">{{ car()?.fuelType }}</span>
+        </p>
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Drive wheel:
+          <span class="font-semibold">{{ car()?.drivetrain }}</span>
+        </p>
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Transmission:
+          <span class="font-semibold">{{ car()?.transmission }}</span>
+        </p>
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Engine:
+          <span class="font-semibold">{{ car()?.engine }}</span>
+        </p>
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Horsepower:
+          <span class="font-semibold">{{ car()?.horsepower }}</span>
+        </p>
+        <p
+          #rightContent
+          class="text-secondary-foreground"
+        >
+          Top speed:
+          <span class="font-semibold">{{ car()?.topSpeed }}</span>
+        </p>
+      </div>
+
+      <p
+        #rightContent
+        class="font-black text-xl text-primary"
+      >
+        {{ car()?.price | currency: 'USD' }}
+      </p>
+    </div>
+  </div>
+</div>

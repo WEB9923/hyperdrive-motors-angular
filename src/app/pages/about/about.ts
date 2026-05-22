@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { PageTitle } from '../../components/ui/page-title/page-title';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [PageTitle],
   templateUrl: './about.html',
-  styleUrl: './about.css',
 })
 export class About {}

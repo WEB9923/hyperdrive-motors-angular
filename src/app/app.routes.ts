@@ -13,7 +13,7 @@ export const routes: Routes = [
     title: 'Cars',
   },
   {
-    path: 'cars/detail/:id',
+    path: 'cars/details/:id',
     loadComponent: () => import('./pages/cars/detail/detail').then((m) => m.Detail),
   },
   {

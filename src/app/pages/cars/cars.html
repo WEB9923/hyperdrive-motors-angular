@@ -1,1 +1,20 @@
-<p class="text-xl font-bold text-primary">cars works!</p>
+<div class="py-10">
+  <div class="container mx-auto px-5">
+    <app-page-title label="Cars catalog"></app-page-title>
+
+    <div
+      class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 min-[530px]:grid-cols-2 grid-cols-1 gap-6"
+    >
+      @for (car of carsService.cars(); track car.id) {
+        <app-car-card
+          [car]="car"
+          (onViewDetails)="navigateToDetails($event)"
+        ></app-car-card>
+      } @empty {
+        <div class="grid-cols-none w-full flex items-center justify-center">
+          <h2 class="text-destructive font-bold text-xl">No products found!</h2>
+        </div>
+      }
+    </div>
+  </div>
+</div>

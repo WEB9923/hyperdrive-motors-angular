@@ -1,0 +1,26 @@
+<article class="w-full min-h-105 border-2 border-border bg-card">
+  <header class="group h-60 w-full overflow-hidden relative select-none">
+    <img
+      [ngSrc]="car().imageUrl"
+      [alt]="car().model"
+      fill
+      class="object-contain aspect-square group-hover:scale-90 transition-all duration-200 pointer-events-none"
+    />
+  </header>
+  <div class="p-3 space-y-1">
+    <h2 class="font-bold text-xl">{{ car().mark }}</h2>
+    <p class="text-sm font-medium text-secondary-foreground">{{ car().model }}</p>
+    <p class="text-sm font-medium text-secondary-foreground">{{ car().engine }}</p>
+    <p class="text-primary text-[15px] font-semibold">{{ car().price | currency: 'USD' }}</p>
+  </div>
+
+  <footer class="px-3">
+    <app-button
+      [variant]="'primary'"
+      classNames="w-full"
+      (onClick)="viewDetails(car().id)"
+    >
+      View details
+    </app-button>
+  </footer>
+</article>

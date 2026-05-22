@@ -19,7 +19,7 @@ export const cars: CarsModel[] = [
   {
     id: 2,
     imageUrl:
-      'https://e7.pngegg.com/pngimages/627/947/png-clipart-park-place-bmw-car-2019-bmw-m5-competition-2018-bmw-m5-sedan-bmw-compact-car-sedan.png',
+      'https://png.klev.club/uploads/posts/2024-04/png-klev-club-xaq7-p-bmv-m5-f90-png-1.png',
     mark: 'BMW',
     model: 'M5 Competition',
     year: '2022',
@@ -121,23 +121,9 @@ export const cars: CarsModel[] = [
     topSpeed: 318,
   },
   {
-    id: 9,
-    imageUrl:
-      'https://p7.hiclipart.com/preview/675/188/56/2015-porsche-911-turbo-s-porsche-930-nissan-gt-r-car-white-porsche-991-turbo-car.jpg',
-    mark: 'Porsche',
-    model: '911 Turbo S',
-    year: '2024',
-    engine: '3.8L Twin-Turbo Flat-6',
-    horsepower: 640,
-    transmission: 'Automatic',
-    drivetrain: 'AWD',
-    fuelType: 'Gasoline',
-    price: 230000,
-    topSpeed: 330,
-  },
-  {
     id: 12,
-    imageUrl: 'https://image.pngaaa.com/837/3233837-middle.png',
+    imageUrl:
+      'https://cdn.jdpower.com/ChromeImageGallery/Expanded/Transparent/640/2023TSC02_640/2023TSC021982858_640_01.png',
     mark: 'Tesla',
     model: 'Model S Plaid',
     year: '2024',
@@ -148,20 +134,6 @@ export const cars: CarsModel[] = [
     fuelType: 'Electric',
     price: 98000,
     topSpeed: 322,
-  },
-  {
-    id: 13,
-    imageUrl: 'https://www.vhv.rs/dpng/d/264-2645955_2020-subaru-wrx-sti-white-hd-png-download.png',
-    mark: 'Subaru',
-    model: 'WRX STI',
-    year: '2021',
-    engine: '2.5L Turbo Boxer',
-    horsepower: 310,
-    transmission: 'Manual',
-    drivetrain: 'AWD',
-    fuelType: 'Gasoline',
-    price: 43000,
-    topSpeed: 255,
   },
   {
     id: 14,
