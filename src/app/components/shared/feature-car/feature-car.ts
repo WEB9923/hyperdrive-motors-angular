@@ -19,6 +19,8 @@ export class FeatureCar {
 
   contentElementsRef = viewChildren<ElementRef<HTMLElement>>('content');
 
+  private timeline!: gsap.core.Timeline;
+
   ngAfterViewInit(): void {
     const wrapper = this.scrollWrapper().nativeElement;
     const car = this.scrollingCar().nativeElement;
@@ -29,7 +31,7 @@ export class FeatureCar {
       autoAlpha: 0,
     });
 
-    const tl = gsap.timeline({
+    this.timeline = gsap.timeline({
       scrollTrigger: {
         trigger: wrapper,
         start: 'top top',
@@ -40,25 +42,34 @@ export class FeatureCar {
       },
     });
 
-    tl.fromTo(
-      car,
-      {
-        scale: 0.5,
-      },
-      {
-        scale: 1,
-        duration: 1,
-        ease: 'none',
-      },
-    ).to(
-      contentElements,
-      {
-        y: 0,
-        stagger: 0.2,
-        autoAlpha: 1,
-        duration: 0.5,
-      },
-      '+=0.3',
-    );
+    this.timeline
+      .fromTo(
+        car,
+        {
+          scale: 0.5,
+        },
+        {
+          scale: 1,
+          duration: 1,
+          ease: 'none',
+        },
+      )
+      .to(
+        contentElements,
+        {
+          y: 0,
+          stagger: 0.2,
+          autoAlpha: 1,
+          duration: 0.5,
+        },
+        '+=0.3',
+      );
+  }
+
+  ngOnDestroy(): void {
+    if (this.timeline) {
+      this.timeline.scrollTrigger?.kill();
+      this.timeline.kill();
+    }
   }
 }

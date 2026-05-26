@@ -11,4 +11,5 @@ export class CarsModel {
   fuelType!: string;
   price!: number;
   topSpeed!: number;
+  about!: string;
 }

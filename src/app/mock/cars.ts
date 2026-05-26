@@ -15,6 +15,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 89900,
     topSpeed: 328,
+    about:
+      'The Dodge Charger SRT Hellcat is the epitome of American muscle, redefining the boundaries of four-door sedan performance. Powered by a legendary 6.2-liter supercharged HEMI V8 engine, this beast delivers an astonishing 807 horsepower in its Jailbreak edition. It combines track-ready straight-line acceleration with a widebody stance that commands attention on any road. Despite its aggressive performance, it maintains practical cabin space, making it a unique mix of a family car and a record-breaking drag strip monster.',
   },
   {
     id: 2,
@@ -30,6 +32,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 112000,
     topSpeed: 305,
+    about:
+      'The BMW M5 Competition represents the absolute pinnacle of high-performance executive sedans. Featuring a sophisticated 4.4-liter TwinPower Turbo V8 engine, it effortlessly pushes 617 horsepower through an advanced M xDrive all-wheel-drive system. This setup offers the driver the ability to switch to pure rear-wheel drive for a more traditional, tail-happy experience. Known for its surgical handling, business-class luxury interior, and understated yet aggressive design, the M5 Competition transitions perfectly from a comfortable daily cruiser to an absolute track weapon.',
   },
   {
     id: 3,
@@ -45,6 +49,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 156000,
     topSpeed: 315,
+    about:
+      'The Mercedes-Benz AMG GT 63 S 4-Door Coupe is an ultra-luxury grand tourer engineered by Affalterbach to deliver supercar performance in an elegant, sweeping body style. Its handcrafted 4.0-liter V8 biturbo engine generates a massive 630 horsepower, throwing passengers into their seats with an unmistakable, deep AMG exhaust note. The cabin is an artistic blend of digital screens, premium leather, and carbon fiber accents. Equipped with rear-axle steering and fully variable AMG Performance 4MATIC+, this car offers remarkable agility that defies its physics and size.',
   },
   {
     id: 4,
@@ -60,6 +66,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 128000,
     topSpeed: 305,
+    about:
+      'The Audi RS7 Sportback is celebrated for having one of the most striking silhouettes in the automotive industry, combining a low-slung five-door fastback design with blistered fenders. Beneath its elegant exterior sits a 4.0-liter twin-turbo V8 paired with a 48-volt mild-hybrid system, generating 591 horsepower. Thanks to the legendary quattro all-wheel-drive system and an adaptive air suspension, the RS7 provides unmatched all-weather traction and an incredibly smooth ride quality, making it the ultimate practical supercar for long-distance journeys.',
   },
   {
     id: 5,
@@ -75,6 +83,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 68000,
     topSpeed: 290,
+    about:
+      'The 2024 Ford Mustang Dark Horse is the first new performance nameplate for the Mustang brand in over two decades, specifically engineered for street-to-track dominance. It is powered by a specially modified 5.0-liter Coyote V8 engine producing a naturally aspirated 500 horsepower. Paired with a Tremec 6-speed manual transmission featuring rev-matching capabilities, it targets driving purists. With enhanced aerodynamics, heavy-duty cooling systems, and MagneRide damping, the Dark Horse represents the futuristic peak of internal combustion muscle.',
   },
   {
     id: 6,
@@ -89,6 +99,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 210000,
     topSpeed: 330,
+    about:
+      'Affectionately known as "Godzilla," the Nissan GT-R Nismo is a race-tuned evolution of Japan’s most iconic sports car. Utilizing turbochargers straight from Nissan’s GT3 race cars, its 3.8-liter V6 pumps out 600 horsepower with virtually no lag. The Nismo edition relies heavily on carbon fiber body panels to shed weight and boost downforce. Its predictive, state-of-the-art ATTESA E-TS all-wheel-drive system calculates traction variables millisecond by millisecond, delivering cornering speeds and launch control acceleration that challenge million-dollar exotic hypercars.',
   },
   {
     id: 7,
@@ -104,6 +116,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 58000,
     topSpeed: 250,
+    about:
+      'The Toyota GR Supra marks the triumphant return of a legendary lineage, developed in close collaboration with Gazoo Racing. Equipped with a highly tunable 3.0-liter turbocharged inline-6 engine, it produces 382 horsepower, sending all that force to the rear wheels. Its short wheelbase, wide track, and perfect 50:50 weight distribution make it an exceptionally agile sports car through tight mountain switchbacks. The GR Supra respects its heritage by focusing entirely on the raw connection between the driver, the steering wheel, and the asphalt.',
   },
   {
     id: 8,
@@ -119,6 +133,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 74000,
     topSpeed: 318,
+    about:
+      'The Chevrolet Camaro ZL1 is a masterclass in combining brutal muscle power with elite sports car engineering. Under its carbon fiber mohawk hood resides a supercharged 6.2-liter LT4 V8 hammering out 650 horsepower and 650 lb-ft of torque. Unlike historical muscle cars that struggled in corners, the ZL1 features Magnetic Ride Control and a performance-tuned chassis that allows it to embarrass dedicated European supercars on track days. It stands out as one of the best performance-per-dollar values ever manufactured.',
   },
   {
     id: 12,
@@ -134,6 +150,8 @@ export const cars: CarsModel[] = [
     fuelType: 'Electric',
     price: 98000,
     topSpeed: 322,
+    about:
+      'The Tesla Model S Plaid is a revolutionary vehicle that completely shattered the benchmark for modern acceleration. Powered by a tri-motor electric setup utilizing innovative carbon-sleeved rotors, it unleashes a mind-boggling 1,020 horsepower. This enables the luxury family sedan to rocket from 0 to 60 mph in a physics-defying 1.99 seconds. Beyond its unmatched launch capabilities, the Plaid offers a minimalist, tech-heavy interior with a cinematic central display, cutting-edge autopilot features, and an impressive electric range that sets standard expectations for EV long trips.',
   },
   {
     id: 14,
@@ -148,5 +166,158 @@ export const cars: CarsModel[] = [
     fuelType: 'Gasoline',
     price: 72000,
     topSpeed: 320,
+    about:
+      'The Dodge Challenger SRT Hellcat is a timeless icon that perfectly preserves the old-school retro aesthetics of the 1970s golden era of muscle cars, while packed with modern ballistic power. Its supercharged 6.2-liter HEMI V8 engine pushes out a menacing 717 horsepower, accompanied by a signature high-pitched supercharger whine that is instantly recognizable worldwide. Designed for straight-line domination and smoky burnouts, the Challenger offers a spacious cabin and retro comfortable seats, making it the ultimate aggressive highway cruiser.',
   },
 ];
+
+// export const cars: CarsModel[] = [
+//   {
+//     id: 1,
+//     imageUrl:
+//       'https://murrayautogroupprod-com.cdn-convertus.com/uploads/sites/33/2024/10/2023-dodge-charger-srt-hellcat-widebody-jailbreak.png',
+//     mark: 'Dodge',
+//     model: 'Charger SRT Hellcat',
+//     year: '2023',
+//     engine: '6.2L Supercharged V8',
+//     horsepower: 807,
+//     transmission: 'Automatic',
+//     drivetrain: 'RWD',
+//     fuelType: 'Gasoline',
+//     price: 89900,
+//     topSpeed: 328,
+//   },
+//   {
+//     id: 2,
+//     imageUrl:
+//       'https://png.klev.club/uploads/posts/2024-04/png-klev-club-xaq7-p-bmv-m5-f90-png-1.png',
+//     mark: 'BMW',
+//     model: 'M5 Competition',
+//     year: '2022',
+//     engine: '4.4L Twin-Turbo V8',
+//     horsepower: 617,
+//     transmission: 'Automatic',
+//     drivetrain: 'AWD',
+//     fuelType: 'Gasoline',
+//     price: 112000,
+//     topSpeed: 305,
+//   },
+//   {
+//     id: 3,
+//     imageUrl:
+//       'https://platform.cstatic-images.com/in/v2/stock_photos/38857270-5621-402a-9f56-9973afe54ee4/726c2934-cdde-4467-81e9-f8044429b03d.png',
+//     mark: 'Mercedes-Benz',
+//     model: 'AMG GT 63 S',
+//     year: '2024',
+//     engine: '4.0L Biturbo V8',
+//     horsepower: 630,
+//     transmission: 'Automatic',
+//     drivetrain: 'AWD',
+//     fuelType: 'Gasoline',
+//     price: 156000,
+//     topSpeed: 315,
+//   },
+//   {
+//     id: 4,
+//     imageUrl:
+//       'https://images.dealer.com/ddc/vehicles/2021/Audi/RS%207/Hatchback/perspective/front-left/2021_24.png',
+//     mark: 'Audi',
+//     model: 'RS7 Sportback',
+//     year: '2023',
+//     engine: '4.0L Twin-Turbo V8',
+//     horsepower: 591,
+//     transmission: 'Automatic',
+//     drivetrain: 'AWD',
+//     fuelType: 'Gasoline',
+//     price: 128000,
+//     topSpeed: 305,
+//   },
+//   {
+//     id: 5,
+//     imageUrl:
+//       'https://d2qldpouxvc097.cloudfront.net/image-by-path?bucket=a5-gallery-serverless-prod-chromebucket-1iz9ffi08lwxm&key=439077%2Ffront34%2Flg%2F0a0a0c',
+//     mark: 'Ford',
+//     model: 'Mustang Dark Horse',
+//     year: '2024',
+//     engine: '5.0L V8',
+//     horsepower: 500,
+//     transmission: 'Manual',
+//     drivetrain: 'RWD',
+//     fuelType: 'Gasoline',
+//     price: 68000,
+//     topSpeed: 290,
+//   },
+//   {
+//     id: 6,
+//     imageUrl: 'https://www.pngmart.com/files/22/Nissan-GT-R-Nismo-PNG-Isolated-HD.png',
+//     mark: 'Nissan',
+//     model: 'GT-R Nismo',
+//     year: '2021',
+//     engine: '3.8L Twin-Turbo V6',
+//     horsepower: 600,
+//     transmission: 'Automatic',
+//     drivetrain: 'AWD',
+//     fuelType: 'Gasoline',
+//     price: 210000,
+//     topSpeed: 330,
+//   },
+//   {
+//     id: 7,
+//     imageUrl:
+//       'https://di-sitebuilder-assets.dealerinspire.com/Toyota/models/2023/GR+Supra/Colors/Renaissance+Red.png',
+//     mark: 'Toyota',
+//     model: 'GR Supra',
+//     year: '2023',
+//     engine: '3.0L Turbo I6',
+//     horsepower: 382,
+//     transmission: 'Automatic',
+//     drivetrain: 'RWD',
+//     fuelType: 'Gasoline',
+//     price: 58000,
+//     topSpeed: 250,
+//   },
+//   {
+//     id: 8,
+//     imageUrl:
+//       'https://www.pngplay.com/wp-content/uploads/13/Chevrolet-Camaro-ZL1-Transparent-Images.png',
+//     mark: 'Chevrolet',
+//     model: 'Camaro ZL1',
+//     year: '2022',
+//     engine: '6.2L Supercharged V8',
+//     horsepower: 650,
+//     transmission: 'Manual',
+//     drivetrain: 'RWD',
+//     fuelType: 'Gasoline',
+//     price: 74000,
+//     topSpeed: 318,
+//   },
+//   {
+//     id: 12,
+//     imageUrl:
+//       'https://cdn.jdpower.com/ChromeImageGallery/Expanded/Transparent/640/2023TSC02_640/2023TSC021982858_640_01.png',
+//     mark: 'Tesla',
+//     model: 'Model S Plaid',
+//     year: '2024',
+//     engine: 'Electric',
+//     horsepower: 1020,
+//     transmission: 'Automatic',
+//     drivetrain: 'AWD',
+//     fuelType: 'Electric',
+//     price: 98000,
+//     topSpeed: 322,
+//   },
+//   {
+//     id: 14,
+//     imageUrl: 'https://cdn.wallpapersafari.com/75/49/vmpgUq.jpg',
+//     mark: 'Dodge',
+//     model: 'Challenger SRT Hellcat',
+//     year: '2023',
+//     engine: '6.2L Supercharged V8',
+//     horsepower: 717,
+//     transmission: 'Automatic',
+//     drivetrain: 'RWD',
+//     fuelType: 'Gasoline',
+//     price: 72000,
+//     topSpeed: 320,
+//   },
+// ];

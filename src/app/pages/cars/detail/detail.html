@@ -1,12 +1,13 @@
 <div class="py-10">
   <div
-    class="container overflow-x-clip px-5 mx-auto grid lg:grid-cols-[1fr_350px] grid-cols-1 lg:gap-10 gap-6"
+    class="mb-20 container mx-auto px-5 overflow-x-clip grid lg:grid-cols-[1fr_450px] grid-cols-1 lg:gap-10 gap-6"
   >
     <div
       #leftContent
       class="relative h-100 w-full"
     >
       <img
+        #carImage
         [ngSrc]="car()?.imageUrl!"
         alt="image"
         fill
@@ -91,4 +92,23 @@
       </p>
     </div>
   </div>
+
+  <section
+    #aboutSection
+    class="h-screen grid place-items-center bg-secondary"
+  >
+    <div
+      #imageTarget
+      class="h-72 w-full max-w-md mx-auto relative"
+    ></div>
+
+    <div class="container mx-auto px-5">
+      <p
+        #aboutText
+        class="lg:leading-16 leading-12 font-bold text-foreground lg:text-2xl text-lg"
+      >
+        {{ car()?.about }}
+      </p>
+    </div>
+  </section>
 </div>
